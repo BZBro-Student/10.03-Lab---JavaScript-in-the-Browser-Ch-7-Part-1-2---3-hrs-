@@ -1,25 +1,60 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang = "en">
 
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
+  <title>10.03 Lab - JavaScript in the Browser (Ch 7 Part 1; 2 - 3 hrs)</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
-  <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
+  <h1>Starting Lineup</h1>
 
-  <h2 id="joke-display"></h2>
+  <form>
+    <div name="status">
+      <fieldset>
+        <legend>Status:</legend>
+        <label for="status-draft">Draft</label>
+        <input type="radio" id="status-draft" name="status" value="Draft">
+        <label for="status-final">Final</label>
+        <input type="radio" id="status-final" name="status" value="Final">
+      </fieldset>
+    </div>
+    <div name="date">
+      <label>Date:</label>
+      <select id = "date" title = "date">
+        <option value="March 20">March 20</option>
+        <option value="March 24">March 24</option>
+        <option value="April 2">April 2</option>
+        <option value="April 6">April 6</option>
+        <option value="April 13">April 13</option>
+      </select>
+    </div>
+    <div name="players">
+      <fieldset>
+        <legend>Select Players:</legend>
+        <input type="checkbox" id="player1" value="Arav Agarwal" name = "player">
+        <label for="player1"> Arav Agarwal </label><br>
+        <input type="checkbox" id="player2" value="Ava Johnson" name = "player">
+        <label for="player2"> Ava Johnson </label><br>
+        <input type="checkbox" id="player3" value="Julio Ortiz " name = "player">
+        <label for="player3"> Julio Ortiz </label><br>
+        <input type="checkbox" id="player4" value="Liam Rubio " name = "player">
+        <label for="player4"> Liam Rubio </label><br>
+        <input type="checkbox" id="player5" value="Emma Witherspoon" name = "player">
+        <label for="player5"> Emma Witherspoon </label><br>
+      </fieldset>
+    </div>
+    <div>
+      <input type="submit" value="Submit" id = "submit">
+    </div>
+  </form>
+
+  <div id ="output"></div>
+
 </body>
 
 </html>
